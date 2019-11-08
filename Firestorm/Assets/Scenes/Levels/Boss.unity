@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!50 &79992244 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 618723816421552265, guid: 81aa0c2fee9ef094696edd16713e6b05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1177575786}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &320308389
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,8 +659,13 @@ PrefabInstance:
     - target: {fileID: 618723816421552263, guid: 81aa0c2fee9ef094696edd16713e6b05,
         type: 3}
       propertyPath: jumpForce
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 618723816421552261, guid: 81aa0c2fee9ef094696edd16713e6b05,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 79992244}
     - target: {fileID: 618723815448905045, guid: 81aa0c2fee9ef094696edd16713e6b05,
         type: 3}
       propertyPath: m_LocalPosition.y
