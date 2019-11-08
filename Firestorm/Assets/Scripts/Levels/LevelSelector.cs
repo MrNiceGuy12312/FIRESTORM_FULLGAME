@@ -48,7 +48,10 @@ public class LevelSelector : MonoBehaviour
     {
         SceneManager.LoadScene(8);
     }
-
+    public void Boss()
+    {
+        SceneManager.LoadScene(7);
+    }
 
     public void QuitGame ()
     {

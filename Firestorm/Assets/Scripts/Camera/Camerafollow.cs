@@ -5,7 +5,7 @@ using UnityEngine;
 public class Camerafollow : MonoBehaviour
 {
     private Transform playerTransform;
-
+    public float offset;
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -19,6 +19,9 @@ public class Camerafollow : MonoBehaviour
 
         temp.x = playerTransform.position.x;
         temp.y = playerTransform.position.y;
+
+        temp.x += offset;
+        temp.y += offset;
 
         transform.position = temp;
 

@@ -32,6 +32,7 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")){
+            player.GetComponent<HP>().TakeDamage(40);
             DestroyProjectile();
         }
     }

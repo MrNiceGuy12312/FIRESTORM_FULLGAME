@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 { 
 
-	public GameObject sonicPrefab;
+	/*public GameObject sonicPrefab;
 	public GameObject tailsPrefab;
-	public GameObject knucklesPrefab;
+	public GameObject knucklesPrefab;*/
 
     public void MainMenu ()
     {
@@ -19,27 +19,27 @@ public class Menu : MonoBehaviour
 	{
         SceneManager.LoadScene(1); 
 	}
-    public void Options ()
+  /*  public void Options ()
     {
         SceneManager.LoadScene( 7);
-    }
-    public void HowToPlay ()
+    }*/
+   /* public void HowToPlay ()
     {
         SceneManager.LoadScene( 3);
-    }
+    }*/
     public void Play ()
     {
-        SceneManager.LoadScene( 4);
+        SceneManager.LoadScene( 1);
     }
 
 	  public void Credits ()
     {
-        SceneManager.LoadScene( 6);
+        SceneManager.LoadScene( 9);
     }
 
 	  public void GameOver ()
     {
-        SceneManager.LoadScene( 5);
+        SceneManager.LoadScene( 8);
     }
 
 
@@ -49,7 +49,7 @@ public class Menu : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
-	 public void PickSonic ()
+	/* public void PickSonic ()
     {  
 		SceneManager.LoadScene( 4);
 		DontDestroyOnLoad(Instantiate(sonicPrefab, new Vector3(0, 2, 0), Quaternion.identity));
@@ -66,6 +66,6 @@ public class Menu : MonoBehaviour
 		SceneManager.LoadScene( 4);
 		DontDestroyOnLoad(Instantiate(knucklesPrefab, new Vector3(0, 2, 0), Quaternion.identity));
         
-    }
+    }*/
     
 }

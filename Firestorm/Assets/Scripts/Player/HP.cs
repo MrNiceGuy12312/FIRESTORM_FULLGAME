@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HP : MonoBehaviour
 {
@@ -17,8 +18,8 @@ public class HP : MonoBehaviour
     {
         health -= amount;
 
-        healthBar.fillAmount = health / 100f;
-
+       healthBar.fillAmount = health / 100f;
+        Debug.Log("oi m8");
         if (health < 0)
         {
             Die();
@@ -29,6 +30,7 @@ public class HP : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        SceneManager.LoadScene("GameOver");
     }
 }
 
